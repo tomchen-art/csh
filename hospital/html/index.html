@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<style>
+			/* body {
+				display: flex;
+			} */
+
+			.all {
+				width: 100vw;
+				height: auto;
+			}
+
+
+			.all div {
+				border-bottom: 1px solid grey;
+				/* 减去左右margin的宽度，让底部边框不触达右边缘 */
+				width: calc(100% - 6vw);
+				box-sizing: border-box;
+				margin: 2.5vh 3vw;
+			}
+
+			.all div span {
+				font-size: 4vw;
+				margin-left: 2vh;
+			}
+
+			.all div input {
+				margin-left: 5vw;
+				font-size: 2.5vw;
+				color: grey;
+				border: 0;
+				/* 去掉聚焦时的外轮廓 */
+				outline: none;
+				margin-bottom: 2.5vh;
+			}
+
+			.all .wel {
+				font-size: 10vw;
+				border: none;
+			}
+
+			.all .but {
+				text-align: center;
+				border: none;
+			}
+
+			.gender,
+			.date {
+				font-size: 2.5vw;
+			}
+
+			button {
+				width: 90vw;
+				height: 8vh;
+				border-radius: 15px;
+				border: none;
+				background-color: #137E92;
+				font-size: 5vw;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<div class="wel">
+				欢迎注册
+			</div>
+			<div><span>手机号码</span><input type="text" name="号码输入框" placeholder="请输入手机号码" /></div>
+			<div><span>真实姓名</span><input type="text" name="姓名输入框" placeholder="真实姓名便于查看体检报告" /></div>
+			<div class="date"><span>生日</span><input type="date" name="生日日期输入框" /></div>
+			<div class="gender"><span>性别</span><input type="radio" name="sex" />男
+				<input type="radio" name="sex" />女
+			</div>
+			<div><span>身份证号</span><input type="text" name="身份证号输入框" placeholder="请输入身份证号" /></div>
+			<div><span>密码</span><input type="password" name="密码输入框" placeholder="请输入密码" /></div>
+			<div><span>确认密码</span><input type="password" name="密码输入框" placeholder="请输入密码" /></div>
+			<div class="but"> <button onclick="window.location.href='./login.html'">完成</button></div>
+		</div>
+	</body>
+</html>
